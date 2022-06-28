@@ -1,0 +1,8 @@
+retrieve array of {ticker, condition, threshold} from the database
+
+while (true):
+	response = https://api.bitkub.com/api/market/ticker
+	filter response with array.ticker
+	compare with condition and threshold
+	if trigger threshold:
+		send notifiction to app.js
